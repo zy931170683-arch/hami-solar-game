@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f5f1de"><title>追光之地 · 哈密光热站</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='%23ed3284'/%3E%3C/svg%3E"><link rel="stylesheet" href="./src/style.css"><script type="importmap">{"imports":{"three":"./public/vendor/three.module.js","three/addons/":"./public/vendor/"}}</script></head>
+<body>
+<div class="paper" aria-hidden="true"></div>
+<header><a class="identity" href="./" aria-label="追光之地首页"><svg viewBox="0 0 44 44" aria-hidden="true"><g stroke="currentColor" fill="none" stroke-width="1.6"><circle cx="22" cy="22" r="9"/><circle cx="22" cy="22" r="15" stroke-dasharray="1 4"/><path d="M22 0v6m0 32v6M0 22h6m32 0h6M6 6l5 5m22 22 5 5M6 38l5-5m22-22 5-5"/></g></svg><span>追光之地<small>哈密 · 光热漫游</small></span></a><div class="edition">新疆，向阳而生<span>一座可以触摸的光热电站</span></div><button id="about" class="text-button">关于这片镜场 <span>↗</span></button></header>
+<main>
+<div class="intro"><p class="location"><span></span> 新疆 · 哈密 · 伊吾</p><h1>把太阳，<br>种在戈壁。</h1><p class="lead">万面镜子，一束光。<br>转动这片大地，发现阳光的另一种可能。</p><span class="chapter">光热漫游 / 追光实验</span></div>
+<section id="viewport" aria-label="可旋转的哈密光热站三维模型"><div id="loading">正在铺开这片阳光…</div><span id="part-label" hidden></span></section>
+<div class="scene-note"><button id="sun-toggle" aria-pressed="false" aria-describedby="sun-help"><span class="sun-mark" aria-hidden="true">☀</span><span id="sun-action">开启太阳模式</span></button><p id="sun-help" aria-live="polite">光照已固定<br>点击太阳，移动光源</p><span class="note-line"></span></div>
+<div class="compass" aria-hidden="true"><span>北</span><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="24" fill="none" stroke="currentColor" stroke-dasharray="1 3"/><path d="M30 8l5 23-5-3-5 3z" fill="currentColor"/><path d="M30 52l-5-23 5 3 5-3z" fill="none" stroke="currentColor"/></svg></div>
+<aside id="detail" hidden><button id="close-detail" aria-label="关闭详情">×</button><small id="detail-kind">吸热塔</small><h2 id="detail-title">聚光的中心</h2><p id="detail-copy"></p></aside>
+<footer><div class="gesture"><svg viewBox="0 0 30 30" fill="none" stroke="currentColor"><path d="M10 16V8a2 2 0 014 0v7-3a2 2 0 014 0v3-2a2 2 0 014 0v7q0 7-7 7-4 0-6-4l-4-6q-1-3 2-3z"/></svg><span>拖动旋转 · 滚轮缩放<small>点击吸热塔、镜场或储热罐，认识它们</small></span></div><div class="view-controls" role="group" aria-label="观察视角"><button class="active" data-view="overview">全景</button><button data-view="top">俯瞰镜场</button><button data-view="tower">走近吸热塔</button><button data-view="horizon">平视远景</button></div><div class="tools"><button id="beams" aria-pressed="false" title="显示聚光路径">聚光路径 <span>＋</span></button><button id="reset" aria-label="复位视角" title="复位视角">↺</button></div></footer>
+</main>
+<dialog id="about-dialog"><button id="close-about" aria-label="关闭">×</button><span class="dialog-sun">✳</span><p>追光之地 · 哈密</p><h2>让阳光留下来。</h2><p>环绕吸热塔的定日镜把太阳光反射到塔顶。熔盐吸收热量、储存能量，再通过蒸汽推动汽轮机发电。</p><p>这一版以你提供的 Blender 厂区与参考照片为基础，将光热站转译成纸上套色版画：荧光色、网点、线条，还有戈壁的温度。</p><small>沿底部的七章旅程，认识吸热塔与定日镜，再亲手储热、调节发电。场景与游戏数值为艺术化教学示意。</small></dialog>
+<div id="error" hidden>三维画面暂时无法加载。请使用支持 WebGL 的浏览器，并开启硬件加速后重试。</div>
+<link rel="stylesheet" href="./src/story.css"><link rel="stylesheet" href="./src/redesign.css"><script type="module" src="./src/main.js"></script></body></html>
+
+

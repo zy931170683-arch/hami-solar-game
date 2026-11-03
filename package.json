@@ -1,0 +1,11 @@
+{
+  "name": "hami-solar-print",
+  "version": "4.2.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "check": "node --check src/main.js && node --check src/landscape.js && node --check src/detail-models.js && node --check src/experience.js && node --check src/story.js && node --check src/mirror-weather.js && node --check src/dispatch.js && node --check server.mjs && node --check src/model-kit.js && node --check src/landmark-models.js && node --check src/power-models.js && node --check src/cleaning-truck.js && node --check src/scene-layout.js && node --check src/city-cycle.js && node --check src/city-world.js"
+  }
+}
